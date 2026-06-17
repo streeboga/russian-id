@@ -1,0 +1,50 @@
+{
+  "name": "streeboga/russian-id",
+  "description": "Checksum validators for identifiers of Russian individuals and legal entities (INN, SNILS, OMS ENP, OGRN, OGRNIP) — pure PHP, zero runtime dependencies, strict typing.",
+  "license": "MIT",
+  "type": "library",
+  "keywords": [
+    "inn",
+    "snils",
+    "oms",
+    "ogrn",
+    "ogrnip",
+    "checksum",
+    "validation",
+    "ИНН",
+    "СНИЛС",
+    "ОМС",
+    "ОГРН"
+  ],
+  "require": {
+    "php": "^8.3"
+  },
+  "require-dev": {
+    "pestphp/pest": "^4.4",
+    "phpstan/phpstan": "^2.0",
+    "phpstan/phpstan-strict-rules": "^2.0",
+    "laravel/pint": "^1.27"
+  },
+  "autoload": {
+    "psr-4": {
+      "Streeboga\\RussianId\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Streeboga\\RussianId\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "pest",
+    "stan": "phpstan analyse",
+    "format": "pint"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
